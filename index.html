@@ -9,57 +9,69 @@
     <title>Gatos de Buenos Aires</title>
 </head>
 <body>
-    <nav class="main-nav">
-     - <ul>
-            <li> <a class="item" href="#">Home</a></li>
-            <li> <a class="item"  href="#">Sobre ellos</a></li> 
-        <li> <a class="item"  href="#">Cuidados</a></li>
-        <li> <a class="item"  href="#">Training</a>  </li> 
-        </ul>
-        <a href="#" class="Hamburger"> <i class="fa-solid fa-bars"></i></a>
-     </nav> 
-     <main class="home">  
-        <section class="home_info">
-            <header class="home_header">
 
-                <h1 class="home_title">Verdaderos Amigos</h1>
-                <span class="home_spacer"></span>
-                <img src="header.jpg" alt="header">
-                <p class="home_text">Sobre Ellos</p>
-              
-            </header>
-        </section>
-       <section>
-<div class="section">
-    <div class="container">
-        <div class="content-section">
-            <div class="title">
-                <h1>Comportamiento</h1>
-            </div>
-            <div class="content">
-                <h3> Navi, Raza: Scottish Fold. </h3>
-                <p>Cada gato es único, sin embargo, los niveles inusuales de acicalamiento o 
-               <br> escondite o los cambios en las rutinas para comer o ir al baño son motivo de preocupación. 
-                 <br> Al igual que dormir encorvado y rociar en interiores. El comportamiento 
-                <br> agresivo o insociable también es un signo de un gato infeliz o enfermo.</p>
-          <div class="button">
-            <a href="#"> <button class="btn_learn">Aprende más</button> </a>
-          </div>
+    <div class="intro">
+        <nav class="main-nav">
+<h2 class="logo">Gatunos<span>Care</span> </h2>
+            <label for="menu-toggle">
+                <div class="menu-button">
+                    <a href="#" class="Hamburger"> <i class="fa-solidfa-bars"></i></a>
                 </div>
+            </label>
+    
+            <input type="checkbox"  id="menu-toggle" class="menu-toggle"/>
+            <ul class="toggle">
+                <li> <a class="item" href="#">Home</a></li>
+                <li> <a class="item"  href="#">Sobre ellos</a></li> 
+            <li> <a class="item"  href="#">Cuidados</a></li>
+            <li> <a class="item"  href="#">Training</a>  </li> 
+    
+            </ul>
+         </nav> 
+         <div class="content-intro">
+             <h4 class="h4-4">Gatos de Buenos Aires</h4>
+<h1 class="h1-1"> Sobre Ellos</h1>
+<h3 class="h3-3">Verdaderos <span>Amigos</span></h3>
+<div class="newslatter">
+    <form>
+        <input type="email" name="email" id="mail" placeholder="Deja tu Email">
+        <input type="submit" name="submit" value="Quiero recibir Info">
+    </form>
+</div>
+         </div>
+    </div>
+
+    <!-- About section -->
+
+       <section class="about">
+<div class="main">
+    <img src="Navi.jpg" alt="Navi">
+    <div class="about-text">
+        <h2>Navi, un Scottish Fold Unico</h2>
+        <h5>Nuestra historia</h5>
+        <p>Cada gato es único, sin embargo, los niveles inusuales de acicalamiento o 
+            <br> escondite o los cambios en las rutinas para comer o ir al baño son motivo de preocupación. 
+              <br> Al igual que dormir encorvado y rociar en interiores. El comportamiento 
+             <br> agresivo o insociable también es un signo de un gato infeliz o enfermo.</p>
+                
+     <button class="btn_learn">Aprende más</button></div>
+    
+    
+</div>
 <div class="social">
     <a href="#"><i class="fa-brands fa-instagram"></i></a>
     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 </div>
 
-        </div>
-        <div class="image">
-            <img src="Navi.jpg" alt="Navi">
+
+        
+
         </div>
     </div>
 </div>
 </section>
 
-<section">
+<!-- <section">
     <div class="middle">
         <div class="container_middle">
             <div class="content-middle">
@@ -86,7 +98,47 @@
         </div>
         
     </div>
-</section>
+</section> -->
+
+<!-- service section start -->
+<div class="service">
+    <div class="title">
+        <h2>Servicios</h2>
+    </div>
+    <div class="box">
+        <div class="card">
+            <i class="fa-solid fa-shield-cat"></i>
+            <h5>Proteccion</h5>
+            <div class="pra">
+                <p>Proteje a tu querida mascota con la mejor
+                    cobertura Veterinaria.Ofrecemos plan de vacunacion, asistencia de heridas, test rapidos de Enfermedades, etc.
+                </p>
+                <p style="text-align: center;">
+                <a class="button" href="#"> Aprende mas</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-fish"></i>
+            <h5>Alimento Premium</h5>
+            <div class="pra">
+                <p>Alimento de calidad para que tu gato sea mas feliz.Ofrecemos pescado traido del sur patagonico para una alimentacion BARF.
+                </p>
+                <p style="text-align: center;">
+                <a class="button" href="#"> Aprende mas</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+            <h5>Pet Grooming</h5>
+            <div class="pra">
+                <p>Mantener el aseo de tu mascota es escencial para su salud y ambiente.Ofrecemos cortes de pelo, Baños, limpieza de orejas,etc.
+                </p>
+                <p style="text-align: center;">
+                <a class="button" href="#"> Aprende mas</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
