@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root {
     font-size: 16px;
     --white: #FFF6EA;
@@ -35,7 +36,7 @@ li {
     padding: 0 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    
+
 }
 
 
@@ -120,7 +121,7 @@ span {
     box-shadow: 0px 0px 5px #DEA057, 0px 0px 15px #1a1b1c;
     top: 6px;
     right: 6px;
-}  
+}
 
 .menu-toggle {
     display: none;
@@ -138,7 +139,7 @@ span {
     padding: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    
+
 }
 
 .item:hover{
@@ -177,7 +178,7 @@ span {
     font-family: "montserrat", 'sans serif';
     text-transform: capitalize;
     margin-bottom: 20px;
-    
+
 }
 
 .about-text h5 {
@@ -227,7 +228,7 @@ button:hover {    background-color: var(--lightblue);
 /* CARDS */
 
 .service {
-    background-color:var(--lightblue);
+    background-color:var(--dark01);
     width: 100%;
     padding: 100px 0px;
 }
@@ -240,7 +241,7 @@ button:hover {    background-color: var(--lightblue);
     text-align: center;
     font-family: "montserrat", sans-serif;
 
-    
+
 }
 .box {
     display: flex;
@@ -265,7 +266,7 @@ button:hover {    background-color: var(--lightblue);
     text-align: center;
     margin: 25px 0px;
     color: #DEA057;
-} 
+}
 h5 {
     color:var(--lightblue);
     font-size: 23px;
@@ -278,7 +279,7 @@ h5 {
     line-height: 27px;
     margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
-} 
+}
 
  .card .button {
     background-color: #DEA057;
@@ -297,115 +298,268 @@ h5 {
     cursor: pointer;
 }
 
+/* SECOND CARD */
+.Staff {
+    background-color:#ffffff;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title-staff h2 {
 
+        color: var(--blueish);
+        font-size: 65px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+        font-family: "montserrat", 'sans serif';
+
+}
+.card-dos {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background:var(--white);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card-dos .button {
+    background-color: var(--blueish);
+    color: var(--white);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s;
+
+}
+.card-dos .button:hover {
+    background-color: transparent;
+    border: 2px solid var(--lightblue);
+    cursor: pointer;
+}
+
+h6 {
+    color:var(--dark01);
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'open sans', sans serif;
+
+
+}
+.box-second {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.vet {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 3px var(--lightblue);
+}
+
+.chef {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 3px var(--lightblue);
+}
+
+.estilista {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 3px var(--lightblue);
+
+}
 /* MEDIA */
 
-@media screen and  (max-width: 768px) {
-
-
-.home_title {
-    font-size: 30px;
+@media (max-width: 767.98px) {
+    
+html {
+    height: min-content;
 }
-.home_text{
-    font-size: 19px;
-}
-    .container {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;
-    
-    }
-    .content-section {
-        float: none;
-        width: 55%;
-        display: block;
-        margin: auto;
-    }
-    .image-section {
-        float: none;
-        width: 100%;
-       
-    
+    nav {
+        width: 90%;
     }
 
-    .image-section{
-        width: 100%;
-        height: auto;
-    }
+        .menu-button{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 40px;
+            height: 36px;
+            padding: 10px;
+            border-radius: 7px;
+            background: var(--lightblue);
+            cursor: pointer;
+        }
+/*
+        i {
+           color: var(--blueish);
+        }
+         */
+        .menu-toggle {
+            display:none;
+        }
 
-    .content-spxection .title {
-        text-transform: uppercase;
-        font-size: 14px;   
+        .toggle { display: none;
         text-align: center;
-    
-    }
-
-    .content-section .content .button {
-       text-align: center;
-    }
-    .btn_learn {
-       padding:9px 30px;
-    
-    }
-
-    .content-section .social {
-        text-align: center;
-    }
-    .Hamburger{
-        display: flex;
-    }
-
-    
-    .content-middle .title-middle {
-        text-transform: uppercase;
-        font-size: 14px;   
-        text-align: center;
-    
-    }
-    .menu-button{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 40px;
-        height: 36px;
-        padding: 10px;
-        border-radius: 7px;
         background: var(--lightblue);
-        cursor: pointer;
-    }
-    i {
-       color: var(--blueish);
-    }
-    
-    .menu-toggle {
-        display: none;
-    }
-    
-    .toggle { display: none;
+        border-radius: 7px;
+        padding: 20px;
+        width: 150px;
+        margin: 10px auto;
+
+        }
+
+        .toggle li {
+            list-style: none;
+            display: block;
+            padding: 10px 0;
+            color: #ffffff;
+            text-align: center;
+        }
+        .fa-solidfa-bars {
+            color: #DEA057;
+        }
+        .menu-toggle:checked + .toggle {
+            display: block;
+        }
+
+        .newslatter form input:first-child {
+            width: 70%;
+            display: inline-block;
+        }
+        .newslatter form input:last-child {
+            width: 40%;
+            margin-left: 25px;
+            position:relative;
+          display:inline-block;
+        }
+         .h3-3 {
+             font-size: 30px;
+         }
+         .h1-1 {
+             font-size: 60px;
+         }
+         .h4-4 {
+             font-size: 15px;
+         }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.about img {
+    width: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-text h2 {
+    font-size: 60px;
     text-align: center;
-    background: var(--lightblue);
-    border-radius: 7px;
-    padding: 20px;
-    width: 150px;
-    margin: 10px auto;
-    
-    
-    }
-    
-    .toggle li {
-        list-style: none;
-        display: block;
-        padding: 10px 0;
-        color: #ffffff;
-        text-align: center;
-    }
-    
-    .menu-toggle:checked + .toggle {
-        display: block;
-    }
+    margin-top: 70px;
+    margin-bottom: 20px;
+line-height: 70px;
+
+
+}
+.about text {
+    width: 300px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+.about-text h5 {
+
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.about-text p {
+    text-align: center;
+    margin: 20px 0px 50px;
+}
+.btn_learn {
+    font-size: 20px;
+    align-self: center;
+
+}
+
+
+/* CARDS  */
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: #ee9631;
+    text-transform: capitalize;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 600px;
+}
+
+/* second card */
+
+.Staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     
 }
- 
+.title-staff h2 {
+    font-size: 50px;
+}
+.box-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.card-dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+    
+
+
+  
+
